@@ -1,0 +1,45 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.viewer-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+#sideBySide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.anaglifo-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  height: auto;
+}
+
+.anaglifo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.left-eye {
+  mix-blend-mode: screen;
+  filter: red;
+  opacity: 0.7;
+}
+
+.right-eye {
+  mix-blend-mode: screen;
+  filter: cyan;
+  opacity: 0.7;
+}
+
+footer {
+  font-size: 14px;
+}
