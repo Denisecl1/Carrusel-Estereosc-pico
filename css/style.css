@@ -7,12 +7,6 @@ body {
   margin: auto;
 }
 
-#sideBySide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .anaglifo-container {
   position: relative;
   width: 100%;
@@ -30,16 +24,80 @@ body {
 
 .left-eye {
   mix-blend-mode: screen;
-  filter: red;
   opacity: 0.7;
 }
 
 .right-eye {
   mix-blend-mode: screen;
-  filter: cyan;
   opacity: 0.7;
 }
 
 footer {
   font-size: 14px;
+}
+
+/* Botones personalizados */
+.button {
+  position: relative;
+  background-color: transparent;
+  color: #e8e8e8;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 170px;
+  height: 60px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button::before {
+  content: attr(data-front);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(135deg, #7b4397, #dc2430);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(0%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button::after {
+  content: attr(data-back);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  transform: translateY(-100%);
+}
+
+.button:hover::after {
+  transform: translateY(0%);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  transform: scale(0.95);
 }
