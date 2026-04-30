@@ -1,5 +1,7 @@
 body {
-  background-color: #f8f9fa;
+  
+  background-color: #f0f2f5; /* Un gris un poco más elegante que el por defecto */
+  font-family: 'Poppins', sans-serif; /* Aplicamos la nueva fuente */
 }
 
 .viewer-container {
@@ -8,17 +10,19 @@ body {
 }
 
 /* Carrusel */
+/* Carrusel Mejorado */
 #stereoCarousel {
   max-width: 850px;
   margin: 0 auto;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  background-color: #000;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background-color: #1a1a2e; /* Gris oscuro elegante, no negro puro */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil brillante */
 }
 
 #stereoCarousel .carousel-item {
-  background-color: #000;
+  background-color: #1a1a2e;
 }
 
 #stereoCarousel .carousel-item img {
@@ -157,4 +161,26 @@ footer {
   border-radius: 15px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   object-fit: contain;     /* Mantiene la proporción exacta sin deformar */
+}
+/* Nuevo estilo para Navbar y Footer */
+.bg-dark {
+  background: linear-gradient(135deg, #2b1055, #7b4397) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+/* Etiquetas Left/Right */
+.side-badge {
+  background: linear-gradient(135deg, #7b4397, #dc2430);
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(220, 36, 48, 0.3);
 }
