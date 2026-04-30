@@ -121,3 +121,40 @@ footer {
 .button:active {
   transform: scale(0.95);
 }
+
+/* Contenedor del visor */
+.viewer-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+/* Imagen SBS */
+#mainViewer {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenedor del anaglifo */
+#anaglifoViewer {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Imagen SBS y Anaglifo */
+#mainViewer, 
+#anaglifoImage {
+  width: auto;             /* Quitamos el 100% para evitar que se estire demasiado */
+  max-width: 100%;         /* Asegura que no se salga en celulares */
+  height: auto;
+  max-height: 70vh;        /* ¡La magia! Limita la imagen al 70% del alto de la pantalla */
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  object-fit: contain;     /* Mantiene la proporción exacta sin deformar */
+}
