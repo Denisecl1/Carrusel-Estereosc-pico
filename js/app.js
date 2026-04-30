@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   carousel.addEventListener("slid.bs.carousel", function (event) {
     currentIndex = event.to + 1;
 
-    mainViewer.src = `img/SBS${currentIndex}.jpg`;
-    anaglifoImage.src = `img/ana${currentIndex}.jpg`;
+    mainViewer.src = `img/SBS${currentIndex}.JPG`;
+    anaglifoImage.src = `img/ana${currentIndex}.JPG`;
   });
 });
